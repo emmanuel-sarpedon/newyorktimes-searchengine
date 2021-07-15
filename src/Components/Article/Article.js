@@ -4,7 +4,7 @@ const Article = (props) => {
   const { url, abstract, text, source, image, date } = props;
 
   return (
-    <a href={url} target="_blank" className="article">
+    <a href={url} target="_blank" rel="noreferrer" className="article">
       {image && <img src={image && image} alt={image}></img>}
       <div className="column">
         <h3 className="title">{abstract}</h3>
