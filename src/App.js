@@ -2,6 +2,7 @@
 
 import Page from "./Components/Page/Page";
 import Filter from "./Components/Filter/Filter";
+import Footer from "./Components/Footer/Footer";
 
 //HOOKS
 import { useState } from "react";
@@ -11,7 +12,7 @@ import sectionValues from "./Filters/section-name-values.json";
 //SCSS
 import "./App.scss";
 
-function App() {
+const App = () => {
   const [inputValue, setInputValue] = useState("");
   const [query, setQuery] = useState("");
   const [filterEnabled, setFilter] = useState("");
@@ -58,8 +59,9 @@ function App() {
         </div>
       </header>
       <Page filter={filterEnabled} query={query} />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

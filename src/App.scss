@@ -1,27 +1,30 @@
 @import "./color.scss";
 
 header {
-  max-width: 80vw;
+  width: 80vw;
   margin: auto;
+
   form {
     width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 50px auto;
+
     input {
       max-width: 500px;
       padding: 15px;
       border: none;
       border-radius: 5px;
       width: 100%;
-      background-color: lightyellow;
+      background-color: lightgrey;
     }
 
     button {
       background-color: $main-color;
       border: none;
-      padding: 5px;
+      padding: 10px;
+      border-radius: 5px;
     }
 
     button:hover {

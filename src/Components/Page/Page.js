@@ -29,22 +29,24 @@ const Page = (props) => {
       <h1>{filter ? filter : "Most recently"}</h1>
       {query && <h2>Results for : {query}</h2>}
       <div>
-        {isLoading
-          ? "chargement en cours"
-          : Array.from(articles).map((e, i) => (
-              <Article
-                key={i}
-                url={e.web_url}
-                abstract={e.abstract}
-                text={e.lead_paragraph}
-                source={e.source}
-                image={
-                  e.multimedia[0] &&
-                  "https://www.nytimes.com/" + e.multimedia[0].url
-                }
-                date={e.pub_date}
-              />
-            ))}
+        {isLoading ? (
+          <div className="loading">Loading...</div>
+        ) : (
+          Array.from(articles).map((e, i) => (
+            <Article
+              key={i}
+              url={e.web_url}
+              abstract={e.abstract}
+              text={e.lead_paragraph}
+              source={e.source}
+              image={
+                e.multimedia[0] &&
+                "https://www.nytimes.com/" + e.multimedia[0].url
+              }
+              date={e.pub_date}
+            />
+          ))
+        )}
       </div>
     </div>
   );

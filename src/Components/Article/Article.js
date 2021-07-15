@@ -10,7 +10,9 @@ const Article = (props) => {
         <h3 className="title">{abstract}</h3>
         <p className="content">{text}</p>
         <div className="source">Source : {source}</div>
-        <div>Publication : {date}</div>{" "}
+        <div className="publication">
+          Publication : {date.split("").slice(0, 10).join("")}
+        </div>{" "}
       </div>
     </a>
   );
