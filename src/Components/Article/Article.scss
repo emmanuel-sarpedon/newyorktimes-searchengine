@@ -1,0 +1,43 @@
+@import "../../color.scss";
+
+a.article {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin: 50px 0;
+  display: flex;
+  transition: all;
+  transition-duration: 0.5s;
+
+  .title {
+    margin: 0;
+  }
+
+  h3 {
+    text-align: justify;
+  }
+
+  img {
+    margin-right: 50px;
+    max-width: 50vw;
+    max-height: 60vh;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+  &:hover {
+    -webkit-transform: scale(1.05); /* Safari et Chrome */
+    -moz-transform: scale(1.05); /* Firefox */
+    -ms-transform: scale(1.05); /* Internet Explorer 9 */
+    -o-transform: scale(1.05); /* Opera */
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+}

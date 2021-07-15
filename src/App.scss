@@ -1,0 +1,39 @@
+@import "./color.scss";
+
+header {
+  max-width: 80vw;
+  margin: auto;
+  form {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    input {
+      max-width: 500px;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      background-color: lightyellow;
+    }
+
+    button {
+      background-color: $main-color;
+      border: none;
+      padding: 5px;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+  }
+
+  .filters-row {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    border-top: solid 1px lightgrey;
+    border-bottom: double black;
+  }
+}

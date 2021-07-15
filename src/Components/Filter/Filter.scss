@@ -1,0 +1,31 @@
+@import "../../color.scss";
+
+.filter {
+  font-family: "Montserrat";
+  padding: 0.4rem 1rem;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 500;
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  margin: 0.5rem 0.1rem;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.filter:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.25); /* Safari et Chrome */
+  -moz-transform: scale(1.25); /* Firefox */
+  -ms-transform: scale(1.25); /* Internet Explorer 9 */
+  -o-transform: scale(1.25); /* Opera */
+  transform: scale(1.25);
+  background-color: $main-color;
+  opacity: 0.5;
+}
+
+.filter:active {
+  box-shadow: 0 0 10px black;
+}
