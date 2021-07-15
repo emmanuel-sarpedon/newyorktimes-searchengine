@@ -14,15 +14,15 @@ const Page = (props) => {
   }${filter && `&fq=news_desk:("${filter}")`}
   &api-key=HHGfGWC6M3ahywRlHV8Vbt5CSMsDhZ0O`;
 
-  const setAllArticles = async () => {
-    setIsLoading(true);
-    const response = await axios.get(url);
-    setArticles(response.data.response.docs);
-    setIsLoading(false);
-    console.log(url);
-  };
-
-  useEffect(() => setAllArticles(), [filter, query]);
+  useEffect(() => {
+    async function setAllArticles() {
+      setIsLoading(true);
+      const response = await axios.get(url);
+      setArticles(response.data.response.docs);
+      setIsLoading(false);
+    }
+    setAllArticles();
+  }, [filter, query, url]);
 
   return (
     <div className="page">
