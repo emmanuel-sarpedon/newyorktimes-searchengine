@@ -1,14 +1,18 @@
 @import "../../color.scss";
 
 footer {
-  background-color: $main-color;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
+  border-top: double black;
+  font-size: 0.85rem;
+  background-color: lightgrey;
 
   div {
-    margin-top: 20px;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
 
     &:not(.external-link) {
       font-weight: bold;

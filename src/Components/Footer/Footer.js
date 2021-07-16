@@ -3,10 +3,11 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer>
+      <div>© Copyright {new Date().getFullYear()}</div>
       <div>
-        Made with React<i class="fab fa-react"></i>by Emmanuel S. -
-        github.com/emmanuel-sarpedon/newyorktimes-searchengine
+        Made with React<i class="fab fa-react"></i>by Emmanuel S.
       </div>
+      <div>github.com/emmanuel-sarpedon/newyorktimes-searchengine</div>
       <div className="external-link">
         <a href='mailto: "emmanuel.sarpedon@gmail.com"'>
           You want to contact me ? Please mail me on :

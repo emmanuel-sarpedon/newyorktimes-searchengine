@@ -53,3 +53,30 @@ a.article {
     color: inherit;
   }
 }
+
+@media (max-width: 1024px) {
+  a.article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+
+    .title {
+      font-size: 0.8rem;
+    }
+    .content {
+      font-size: 0.7rem;
+    }
+    .publication,
+    .source {
+      margin-top: 20px;
+      font-size: 0.5rem;
+      text-align: justify;
+    }
+    img {
+      max-width: 80vw;
+      max-height: 50vh;
+      margin: 0 0 15px 0;
+    }
+  }
+}

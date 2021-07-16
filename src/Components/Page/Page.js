@@ -26,7 +26,7 @@ const Page = (props) => {
 
   return (
     <div className="page">
-      <h1>{filter ? filter : "Most recently"}</h1>
+      <h1>{filter ? filter : "Latest"}</h1>
       {query && <h2>Results for : {query}</h2>}
       <div>
         {isLoading ? (

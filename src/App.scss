@@ -4,8 +4,19 @@ header {
   width: 80vw;
   margin: auto;
 
+  .legal {
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  .logo {
+    display: block;
+    max-height: 25vh;
+    margin: auto;
+  }
+
   form {
-    width: 600px;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,5 +49,31 @@ header {
     overflow-x: auto;
     border-top: solid 1px lightgrey;
     border-bottom: double black;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    width: 95vw;
+    .legal {
+      font-size: 0.65rem;
+    }
+
+    form {
+      flex-direction: column;
+      margin: 25px auto;
+
+      input {
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: $main-color;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
   }
 }
