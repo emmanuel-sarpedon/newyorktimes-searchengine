@@ -10,7 +10,6 @@ const Footer = () => {
       <div>github.com/emmanuel-sarpedon/newyorktimes-searchengine</div>
       <div className="external-link">
         <a href='mailto: "emmanuel.sarpedon@gmail.com"'>
-          You want to contact me ? Please mail me on :
           <i class="far fa-envelope fa-lg"></i>emmanuel.sarpedon@gmail.com
         </a>
       </div>
